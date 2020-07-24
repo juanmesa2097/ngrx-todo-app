@@ -28,6 +28,7 @@
               "src/assets"
             ],
             "styles": [
+              "src/tailwind-output.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -123,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ngrx-todo-app"
+    }
+  },
+  "defaultProject": "ngrx-todo-app",
+  "cli": {
+    "analytics": "fd33d415-bb44-451b-9b95-0cdb45afc563"
+  }
 }
