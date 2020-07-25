@@ -1,0 +1,35 @@
+<div
+  class="grid items-center grid-cols-5 py-2 text-sm text-gray-800 border-t border-b border-gray-200"
+>
+  <span class="text-left">3 items left</span>
+
+  <div class="col-span-3">
+    <input type="radio" name="filter" id="all" hidden checked />
+    <label
+      for="all"
+      class="px-2 py-1 mx-2 border border-gray-400 rounded cursor-pointer"
+    >
+      All
+    </label>
+
+    <input type="radio" name="filter" id="active" hidden />
+    <label
+      for="active"
+      class="px-2 py-1 mx-2 border border-gray-400 rounded cursor-pointer"
+      >Active</label
+    >
+
+    <input type="radio" name="filter" id="completed" hidden />
+    <label
+      for="completed"
+      class="px-2 py-1 mx-2 border border-gray-400 rounded cursor-pointer"
+      >Completed</label
+    >
+  </div>
+
+  <div class="text-right">
+    <button>
+      Clear completed
+    </button>
+  </div>
+</div>

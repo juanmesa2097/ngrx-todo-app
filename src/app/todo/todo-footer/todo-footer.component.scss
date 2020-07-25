@@ -1,0 +1,7 @@
+:host {
+  input[type="radio"]:checked + label {
+    background: #333;
+    color: #e4e4e4;
+    transition: 300ms ease;
+  }
+}
