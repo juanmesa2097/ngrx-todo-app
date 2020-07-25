@@ -3,11 +3,11 @@
 
 <!-- item -->
 <div class="mt-5">
-  <app-todo-item></app-todo-item>
-  <app-todo-item></app-todo-item>
-  <app-todo-item></app-todo-item>
-  <app-todo-item></app-todo-item>
+  <app-todo-item
+    *ngFor="let todo of todos; trackBy: trackByTodo"
+    [todo]="todo"
+  ></app-todo-item>
 </div>
 
 <!-- footer -->
-<app-todo-footer></app-todo-footer>
+<app-todo-footer *ngIf="todos?.length > 0"></app-todo-footer>

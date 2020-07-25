@@ -1,10 +1,17 @@
 <div class="w-full border-t border-gray-200">
   <div class="flex items-center justify-between text-gray-700">
-    <div class="flex items-center w-full py-3 text-left cursor-pointer">
-      <input type="checkbox" class="w-5 h-5 cursor-pointer" id="checkbox" />
-      <label class="block w-full mx-6 cursor-pointer" for="checkbox"
-        >Take the dog out</label
+    <div class="flex items-center w-full text-left cursor-pointer">
+      <input
+        type="checkbox"
+        class="w-5 h-5 cursor-pointer"
+        id="todo-{{ todo.id }}"
+      />
+      <label
+        class="block w-full px-6 py-3 cursor-pointer"
+        for="todo-{{ todo.id }}"
       >
+        {{ todo.name }}
+      </label>
     </div>
     <div class="flex items-center">
       <button class="mx-2 focus:outline-none focus:shadow-outline leading-0">

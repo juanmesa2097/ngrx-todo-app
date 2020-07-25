@@ -3,10 +3,9 @@
     <h1 class="text-6xl text-blue-700">TODOS</h1>
 
     <div class="mt-6">
-      <app-todo-container></app-todo-container>
+      <app-todo-container [todos]="todos"></app-todo-container>
     </div>
-
-    <div class="max-w-sm mx-auto mt-32">
+    <div class="max-w-sm mx-auto mt-24" *ngIf="!todos || todos.length === 0">
       <h2 class="text-2xl text-blue-700">There are no todos added yet</h2>
       <img
         src="../assets/img/undraw-through-the-window.svg"
